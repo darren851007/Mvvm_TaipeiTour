@@ -47,14 +47,32 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    // Retrofit
     implementation(libs.retrofit2)
     implementation(libs.retrofit2.converter.gson)
     implementation(libs.retrofit2.adapter.coroutines)
-    implementation(libs.okhttp.logging.interceptor)
-    implementation(libs.kotlinx.serialization.json)
     implementation(libs.retrofit2.serialization.converter)
+
+    // okHttp
+    implementation(libs.okhttp)
+    implementation(libs.okhttp.logging.interceptor)
+
+    // KotlinX Serialization
+    implementation(libs.kotlinx.serialization.json)
+
     implementation(libs.lifecycle.livedata.ktx)
     implementation(libs.lifecycle.viewmodel.ktx)
+
+    // koin
+    implementation(libs.koin.android)
+    implementation(libs.koin.core)
+
+    // Coil
+    implementation(libs.coil)
+    implementation(libs.coil.compose) // If you're using Jetpack Compose
+
+
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
